@@ -1,0 +1,113 @@
+body{ /* default properties */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+  font-family: RedHatDisplay, Helvetica, 'Segoe UI', Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define custom font RedHatDisplay */
+@font-face {
+  font-family: RedHatDisplay;
+  src: url(/assets/fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face { /* bold font */
+  font-family: RedHatDisplay;
+  src: url(/assets/fonts/RedHatDisplay-SemiBold.ttf);
+  font-weight: bold;
+}
+
+a{ /* link colors */
+  color: rgb(11, 225, 131);
+}
+
+.title { /* title formatting */
+  position: relative;
+  font-weight: bold;
+  font-size: 96px;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+}
+
+div.container-articles{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 90%;
+  max-width: 1100px;
+  padding: 20px;
+  margin: 20px;
+}
+
+div.container-articles > a{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+div.container-articles > a > div{
+  padding: 15px;
+  background-color: rgb(35, 35, 35);
+  border-radius: 5px;
+  box-shadow: 6px 6px 20px rgba(11, 225, 131, 0.2);
+  text-align: center;
+  flex: 1;
+}
+
+@media screen and (max-width:900px) {
+  div.container-articles {
+    flex-direction: column;
+  }
+}
+
+::-moz-selection{ /* text selection properties for firefox */
+  color: rgb(15, 158, 213);
+  background: white;
+}
+
+::selection{ /* text selection properties for chromium browsers */
+  color: rgb(15, 158, 213);
+  background: white;
+}
+
+.top-section{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  padding-top: 12px;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+  padding: 5px;
+  justify-content: center;
+  box-sizing: border-box;
+}

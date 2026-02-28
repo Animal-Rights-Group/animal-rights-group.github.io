@@ -1,0 +1,141 @@
+body{ /* default properties */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(20, 20, 20);
+  font-family: RedHatDisplay, Helvetica, 'Segoe UI', Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face{
+  font-family: RedHatDisplay;
+  src: url(/assets/fonts/RedHatDisplay-Medium.ttf);
+}
+
+@font-face{
+  font-family: RedHatDisplay;
+  src: url(/assets/fonts/RedHatDisplay-SemiBold.ttf);
+  font-weight: bold;
+}
+
+/* navigation bar */
+ul.topnav{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(45, 45, 45);
+  justify-content: center;
+}
+
+ul.topnav li a{
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover{
+  background-color: #dddddd;
+  color: black;
+}
+
+
+a{ /* link colors */
+  color: rgb(11, 225, 131);
+}
+
+.title { /* title formatting */
+  position: relative;
+  font-family: RedHatDisplay;
+  font-weight: bold;
+  font-size: 82px;
+  color: white;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+}
+
+.box{
+  border-radius: 25px;
+  background-color: rgb(35, 35, 35);
+  width: 85%;
+  max-width: 900px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 6px 6px 20px rgba(29, 223, 132, 0.2);
+}
+
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+::-moz-selection{ /* text selection properties for firefox */
+  color: rgb(15, 158, 213);
+  background: white;
+}
+
+::selection{ /* text selection properties for chromium browsers */
+  color: rgb(15, 158, 213);
+  background: white;
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-align: center;
+  font-family: RedHatDisplay;
+  font-weight: bold;
+}
+
+.section{
+  text-align: center;
+  font-family: RedHatDisplay;
+  font-weight: bold;
+  color: rgb(11, 225, 131);
+  font-size: 38px;
+}
+
+.top-section{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+hr{
+  border-color: rgb(15, 158, 213);
+}
+
+header{
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(35, 35, 35);
+  padding-top: 12px;
+  padding-bottom: 5px;
+  justify-content: center;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  background-color: rgb(25, 25, 25);
+  padding: 5px;
+  justify-content: center;
+  box-sizing: border-box;
+}

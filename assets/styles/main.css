@@ -7,6 +7,8 @@ body{ /* default properties */
   color: white;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @font-face {
@@ -28,7 +30,7 @@ a{ /* link colors */
   position: relative;
   font-family: RedHatDisplay;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 68px;
   color: white;
 }
 

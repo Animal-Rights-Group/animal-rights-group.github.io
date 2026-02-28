@@ -7,6 +7,8 @@ body{ /* default properties */
   color: white;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @font-face{
@@ -35,6 +37,7 @@ ul.topnav li a{
   color: #f1f1f1;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: calc(0.4vw + 12px);
 }
 
 ul.topnav li a:hover{

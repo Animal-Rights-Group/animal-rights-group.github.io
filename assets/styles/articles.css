@@ -7,6 +7,8 @@ body{ /* default properties */
   color: white;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 @font-face{

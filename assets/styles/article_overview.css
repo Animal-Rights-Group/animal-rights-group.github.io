@@ -7,6 +7,8 @@ body{ /* default properties */
   color: white;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Define custom font RedHatDisplay */
@@ -28,7 +30,7 @@ a{ /* link colors */
 .title { /* title formatting */
   position: relative;
   font-weight: bold;
-  font-size: 96px;
+  font-size: 68px;
   color: white;
 }
 
@@ -38,6 +40,12 @@ a{ /* link colors */
   flex: 1;
   align-items: center;
   width: 100%;
+}
+
+.textbox{
+  width: 95%;
+  max-width: 1000px;
+  text-align: center;
 }
 
 div.container-articles{
@@ -82,14 +90,6 @@ div.container-articles > a > div{
 ::selection{ /* text selection properties for chromium browsers */
   color: rgb(15, 158, 213);
   background: white;
-}
-
-.top-section{
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 45px;
-  justify-content: center;
-  align-items: center;
 }
 
 header{

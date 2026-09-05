@@ -51,6 +51,10 @@ const resources = [
         name: "Ed Winters",
         url: "https://www.youtube.com/@ed.winters",
       },
+      {
+        name: "Tierethik und Veganismus",
+        url: "https://youtube.com/@tierethikundveganismus?si=ycGbF0ps_u1pJVAl",
+      },
     ],
   },
   {
@@ -67,6 +71,19 @@ const resources = [
       {
         name: "The Vegan Society",
         url: "https://vegansociety.com/",
+      },
+      {
+        name: "Sea Shepherd",
+        url: "https://seashepherd.org/",
+      },
+    ],
+  },
+  {
+    category: "wissenschaftliche Literatur",
+    items: [
+      {
+        name: "",
+        url: "",
       },
     ],
   },
